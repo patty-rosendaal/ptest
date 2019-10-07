@@ -42,3 +42,9 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
 RUN conda update conda -y
 RUN conda install conda-build -y
 RUN conda install anaconda-client -y
+
+#RUN wget https://data.qiime2.org/distro/core/qiime2-2019.7-py36-linux-conda.yml && \
+#    conda env create -n qiime2-2019.7 --file qiime2-2019.7-py36-linux-conda.yml && \
+#    rm qiime2-2019.7-py36-linux-conda.yml
+
+#RUN conda install q2-metaphlan2 -c fasnicar -c bioconda

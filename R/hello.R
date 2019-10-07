@@ -11,7 +11,7 @@
 #
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:     sdfsdfsd        'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#   Test Package:           hdfhdfhdfh   'Ctrl + Shift + T'
 
 hello <- function() {
   print("Hello, world!")

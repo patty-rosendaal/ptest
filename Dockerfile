@@ -1,6 +1,8 @@
 # Base image https://hub.docker.com/u/rocker/
 FROM rocker/geospatial
 
+WORKDIR /home/patty_rosendaal/ptest
+
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     ncbi-blast+
@@ -43,8 +45,8 @@ RUN conda update conda -y
 RUN conda install conda-build -y
 RUN conda install anaconda-client -y
 
-#RUN wget https://data.qiime2.org/distro/core/qiime2-2019.7-py36-linux-conda.yml && \
-#    conda env create -n qiime2-2019.7 --file qiime2-2019.7-py36-linux-conda.yml && \
-#    rm qiime2-2019.7-py36-linux-conda.yml
+RUN wget https://data.qiime2.org/distro/core/qiime2-2019.7-py36-linux-conda.yml && \
+    conda env create -n qiime2-2019.7 --file qiime2-2019.7-py36-linux-conda.yml && \
+    rm qiime2-2019.7-py36-linux-conda.yml
 
 #RUN conda install q2-metaphlan2 -c fasnicar -c bioconda

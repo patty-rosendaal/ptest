@@ -14,6 +14,8 @@
 
 # simple one liner for command line copying
 
+#sudo docker build --rm --force-rm -t rstudio/geo-testing_qiime4 . --compress
+
 DATA_DIR=${PWD}/data-raw
 sudo docker run -d --rm -p 28787:8787 --name geo_test -e USERID=$UID -e PASSWORD=SoSecret! -v $DATA_DIR:/home/rstudio/data-raw rstudio/geo-testing1
 

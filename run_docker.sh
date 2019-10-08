@@ -14,10 +14,10 @@
 
 # simple one liner for command line copying
 
-#sudo docker build --rm --force-rm -t rstudio/geo-testing_qiime4 . --compress
+#sudo docker build --rm --force-rm -t rstudio/geo-testing1 .
 
 DATA_DIR=${PWD}/data-raw
-sudo docker run -d --rm -p 28787:8787 --name geo_test -e USERID=$UID -e PASSWORD=SoSecret! -v $DATA_DIR:/home/rstudio/data-raw rstudio/geo-testing1
+sudo docker run -d --rm -p 28787:8787 --name geo_test -e USERID=$UID -e PASSWORD=SoSecret! -v $DATA_DIR:/home/rstudio/data-raw rstudio/geo-testing3
 
 # this is an example of running the container in interactive mode and logging into a bash shell
 # sudo docker run -it --rm  --name hello-world2 -e USERID=$UID -v $DATA_DIR:/home/rstudio/Data rstudio/hello-world  /bin/bash

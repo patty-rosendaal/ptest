@@ -1,0 +1,10 @@
+---
+title: "resources"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+[Tutorial hello rocker](https://www.symbolix.com.au/blog-main/r-docker-hello)
